@@ -60,12 +60,42 @@ namespace NewProject
 
 
 
-            var getbooks = ForBooks.GetBooks().Where(b => b.Price <= 15).OrderBy(b => b.Title).Select(b => b.Title);
-            foreach(var book in getbooks)
-            {
-                Console.WriteLine(book);
-            }
+            //LINQ query operators:
+            /*
+            var takeIT = from  b in ForBooks.GetBooks()
+                         where b.Price <= 15
+                         orderby b.Title
+                         select b;
 
+            foreach (var item in takeIT)
+            {
+                Console.WriteLine("title : " + item.Title+ ", price : "+ item.Price);
+            }
+            */
+
+
+
+
+
+            //LINQ extension methods:
+
+            /*
+            //var getbooks = ForBooks.GetBooks()
+            //                                  .Where(b => b.Price <= 15)
+            //                                  .OrderBy(b => b.Title)
+            //                                  .Select(b => b.Title);
+            //foreach(var book in getbooks)
+            //{
+            //    Console.WriteLine(book);
+            //}
+
+
+            
+            //var single = ForBooks.GetBooks().Sum(b => b.Price);
+            //var cheap = ForBooks.GetBooks().Min(b => b.Price);
+            //Console.WriteLine(single);
+             
+            */
 
 
 

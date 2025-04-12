@@ -22,7 +22,7 @@ namespace NewProject.LINQ
         {
             return new List<Books>()
             {
-                new Books(){Title = "1984", Price=10},
+                new Books(){Title = "1984", Price=16},
                 new Books(){Title = "Alchemist", Price =9},
                 new Books(){Title = "Atmoic Habits", Price = 20},
                 new Books(){Title = "Advance Csharp", Price = 13},
