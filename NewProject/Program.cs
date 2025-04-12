@@ -41,6 +41,7 @@ namespace NewProject
  
         public static void Main(string[] args)
         {
+            /*
             //delegates.
             /*
             System.Action<string> del = PrintIt;
@@ -73,10 +74,7 @@ namespace NewProject
             }
             */
 
-
-
-
-
+ 
             //LINQ extension methods:
 
             /*
@@ -96,6 +94,16 @@ namespace NewProject
             //Console.WriteLine(single);
              
             */
+            
+            /*
+            DateTime? date = DateTime.Now;
+            var date2 = date ?? DateTime.Today.AddDays(1);
+            Console.WriteLine(date2.Day);
+            */
+
+
+
+
 
 
 
